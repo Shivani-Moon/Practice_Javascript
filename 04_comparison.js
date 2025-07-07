@@ -68,3 +68,31 @@ const myFunction = function(){
 
 console.log(typeof outsideTemp);
 
+
+//*****************************************************************************/
+
+//Stack(Primitive), Heap(Non-Primitive)
+
+
+//STACK
+let myYoutubename = "xyz";
+
+let anothername = myYoutubename;
+
+anothername = "codeinJS";
+console.log(anothername);
+console.log(myYoutubename);
+
+//HEAP
+
+let userOne = {
+    email: "user@google.com",
+    id: 1,
+}
+
+ let userTwo = userOne;
+
+ userTwo.email = "coder@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email); 
